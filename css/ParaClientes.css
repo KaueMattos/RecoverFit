@@ -1,0 +1,81 @@
+.menu-list li:nth-child(4)::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #D8385E;
+    border-radius: 4px;
+    bottom: -44px;
+   
+}
+.ParaClientes{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    gap: 20px;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    box-shadow: 0px 2px 20px #6d5d7234;
+    background: #fff;
+    align-items: center;
+}
+
+.introducao{
+    display: grid;
+    padding: 64px 0px 64px 100px;
+    text-align: left;
+    gap: 10px;
+    align-content: center;
+    justify-items: start;
+}
+
+.introducao h1 {
+    color: #6D5D72;
+    font-size: 64px;
+    max-width: 20ch;
+}
+
+.introducao p{
+    color: #625866;
+    font-size: 16px;
+    max-width: 80ch;
+}
+
+.introducao-cover{
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    width: 350px;
+}
+img{
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+.ParaClientes{
+    grid-template-columns: 1fr;
+}
+.introducao{
+    padding-right: 100px;
+}
+.introducao-cover{
+    display: none;
+}
+}
+
+@media (max-width:500px) {
+    .introducao{
+        padding: 30px 50px 30px 50px;
+    }
+    .introducao h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:340px) {
+    .introducao h1 {
+        font-size: 30px;
+    }
+}

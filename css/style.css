@@ -14,6 +14,9 @@ header{
     background: #ffff;
     box-shadow: 0px 2px 20px #46464611;
 }
+header li{
+    position: relative;
+}
 .menu{
     display: flex;
     justify-content:  space-evenly;
@@ -90,16 +93,17 @@ header{
 }
 /*finalMenu*/
 
-#carrossel{  
+#carrossel {
     margin: auto;
-    margin-top: 60px;
-    width:90%;
-    height:auto;  
-}	
-#carrossel img{
-	width:100%;
-    height:35vw;
-	border-radius:8px;	  
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 90%;
+    height: auto;
+}
+#carrossel img {
+    width: 100%;
+    height: 35vw;
+    border-radius: 8px;
 }
 
 /*QuemSomos*/
@@ -109,7 +113,7 @@ header{
     justify-content: center; 
 }
 .quem-somos-card {
-    max-width: 800px; 
+    max-width: 1135px; 
     width: 100%;
     background-color: #fff; 
     border-top: 5px solid #D8385E; 
@@ -134,6 +138,138 @@ header{
     margin: 0 auto;
     max-width: 700px; 
 }
+
+/*Serviços*/
+.servicos-section{
+    background:#9f1ecee8;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.servicos-title{
+    color:#ffffff;
+    font-size: 50px;
+    margin-bottom:40px;
+    font-weight:600;
+}
+
+.servicos-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding: 0px 100px;
+    justify-content: center;
+    gap:20px; 
+}
+
+.servico-card{
+    display: grid;
+    gap:20px;
+    justify-items:center; 
+}
+
+.servico-img{ 
+    height: 400px;  
+
+}
+
+.servico-img img{
+  border-radius: 20px;  
+  border-top: 5px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  object-position: center; 
+  display: block;
+}
+.servico-card h3{
+    font-size:35px;
+    color:#e9dcd2;
+}
+
+
+.servico-card p{
+    justify-self: center;
+    font-size:15px;
+    max-width:70ch;
+    color:#383838;
+}
+/*finalSer*/
+/*Planos*/
+.planos-section{
+    background:#fff;
+    padding:90px 20px;
+}
+
+.planos-container{
+    max-width:1340px;
+    margin:auto;
+    display:grid;
+    padding: 0px 100px;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.plano-card{
+    padding:25px;
+    border-radius:12px;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.plano-card h3{
+    font-size:22px;
+}
+
+.plano-card h4{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.plano-card button{
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    color:#fff;
+    font-weight:bold;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Cores dos planos */
+.basic{
+    background:#ffd7e4;
+    color:#333;
+}
+.basic button{ background:#d8385e; }
+
+.plus{
+    background:#d8385e;
+}
+.plus button{
+    background:#fff;
+    color:#d8385e;
+}
+
+.max{
+    background:#fbd000;
+    color:#333;
+}
+.max button{
+    background:#d8385e;
+}
+
+.pro-max{
+    background:#ff8c00;
+}
+.pro-max button{
+    background:#fff;
+    color:#ff8c00;
+}
+/**/
 /*footer*/
 .footer {
   background-color: #D8385E; 
@@ -248,7 +384,22 @@ ul.social-icons a:hover {
         font-size: 2.5rem;
     }
 }
+@media(max-width:768px){
+    .servicos-container{
+        grid-template-columns:1fr;
+    }
 
+    .servico-img{ 
+        height: 250px;  
+    
+    }
+
+    .planos-container{
+        grid-template-columns:1fr;
+        padding:20px ;
+    }
+
+}
 @media (max-width: 360px){
     .footer-copy{
         font-size: 0.9rem; 

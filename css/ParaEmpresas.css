@@ -1,0 +1,78 @@
+.menu-list li:nth-child(3)::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #D8385E;
+    border-radius: 4px;
+    bottom: -44px;
+   
+}
+.SobreEmpresa{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 2px 20px #46464615;
+    align-items: center;
+}
+.introducao{
+    display: grid;
+    padding: 64px 0px 64px 100px;
+    text-align: left;
+    gap: 10px;
+    align-content: center;
+    justify-items: start;
+}
+
+
+.introducao h1 {
+    color: #47393C;
+    font-size: 64px;
+    max-width: 20ch;
+}
+
+.introducao p{
+    color: #605356;
+    font-size: 16px;
+    max-width: 80ch;
+}
+.introducao-cover{
+    display: block;
+    padding-right: 100px;
+    width: 350px;
+}
+img{
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+.SobreEmpresa{
+    grid-template-columns: 1fr;
+}
+.introducao{
+    padding-right: 100px;
+}
+.introducao-cover{
+    display: none;
+}
+}
+
+@media (max-width:500px) {
+    .introducao{
+        padding: 30px 50px 30px 50px;
+    }
+    .introducao h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:340px) {
+    .introducao h1 {
+        font-size: 30px;
+    }
+}
