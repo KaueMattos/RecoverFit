@@ -141,34 +141,35 @@ header li{
 
 /*Serviços*/
 .servicos-section{
+    display: grid;
+    padding: 60px 0px;
+    justify-content: center;
     background:#9f1ecee8;
-    padding:60px 20px;
     text-align:center;
 }
 
 .servicos-title{
     color:#ffffff;
     font-size: 50px;
-    margin-bottom:40px;
+    margin-bottom:60px;
     font-weight:600;
 }
 
 .servicos-container{
     display:grid;
+    gap: 70px;
+    padding: 0px 50px;
     grid-template-columns:1fr 1fr;
-    padding: 0px 100px;
     justify-content: center;
-    gap:20px; 
 }
 
 .servico-card{
     display: grid;
-    gap:20px;
-    justify-items:center; 
+    gap: 15px;
 }
 
 .servico-img{ 
-    height: 400px;  
+    height: 250px;  
 
 }
 
@@ -190,30 +191,34 @@ header li{
 .servico-card p{
     justify-self: center;
     font-size:15px;
-    max-width:70ch;
+    max-width: 45ch;
     color:#383838;
 }
 /*finalSer*/
 /*Planos*/
 .planos-section{
-    background:#fff;
-    padding:90px 20px;
+    display: grid;
+    justify-content: center;
 }
-
+.planos-section h2 {
+    margin: 60px 0px;
+    color: #47393c;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
 .planos-container{
-    max-width:1340px;
-    margin:auto;
     display:grid;
-    padding: 0px 100px;
-    grid-template-columns:repeat(2,1fr);
-    gap:40px;
+    grid-template-columns: 1fr 1fr ;
+    padding: 0px 20px;
+    gap:70px;
 }
 
 .plano-card{
     padding:25px;
     border-radius:12px;
     color:#fff;
-    display:flex;
+    display:grid;
     flex-direction:column;
     gap:10px;
 }
@@ -318,14 +323,16 @@ ul.social-icons a:hover {
 /*finalFooter*/
 
 /*finalQuemSomos*/
-@media (max-width: 1110px){
+@media (max-width: 1200px){
     .mobile-menu.open {
         max-height: 500px; 
     }
     .menu{
-        margin-left: 40px;
-        padding: 30px 0px 15px 0px;
-
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
     }
     .logo2{
         display: flex;
@@ -343,6 +350,10 @@ ul.social-icons a:hover {
     }
     .mobile-menu-icon {
         display: flex;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 20px;
         align-items: center;
     }
     .mobile-menu-icon button {
@@ -360,6 +371,9 @@ ul.social-icons a:hover {
         display: block;
         padding-top: 1.2rem;
     }
+    .mobile-menu .menu-item:nth-child(1){
+        padding-top: 5px;
+    }
     .mobile-menu .registrar-button-2{
         display: block;
         padding: 1rem 2rem;
@@ -371,7 +385,6 @@ ul.social-icons a:hover {
     .open {
         display: block;
     }
-
     .quem-somos-section {
         padding: 6rem 2rem; 
     }
@@ -394,6 +407,10 @@ ul.social-icons a:hover {
     
     }
 
+    .servicos-container{
+        padding: 0px 20px;
+    }
+
     .planos-container{
         grid-template-columns:1fr;
         padding:20px ;
@@ -407,8 +424,14 @@ ul.social-icons a:hover {
     .logo2{
      width: 180px;
     }  
+    .mobile-menu-icon{
+        right: 5px;
+    }
+    .mobile-menu-icon img{
+        width: 30px;
+    }
     .menu{
-        padding: 20px 0px 10px 0px;
+        padding: 20px 0px;
     }
 }
 
