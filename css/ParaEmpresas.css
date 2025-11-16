@@ -76,7 +76,7 @@ form .input-group button{
     background:#FFBE40;
     border-radius: 40px;
     outline: none;
-    border: none;
+    border: 1px solid #D8AD5A;
     color: #47393C;
     cursor: pointer;
     font-size: 16px;
