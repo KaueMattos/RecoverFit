@@ -25,9 +25,9 @@ function fecharMenu() {
 });
 
 var contador = 1; //variável pública criada fora da function
-var img1="/img/Planos1.png";
-var img2="/img/inssDesconto.png";
-var img3="/img/AcademiaNova3.png";
+var img1="img/Planos1.png";
+var img2="img/inssDesconto.png";
+var img3="img/AcademiaNova3.png";
 var tempo=4000; //2000(milessegundos) : 1000 (milessegundo) = 2s
 var exibir=setInterval("Exibindo()",tempo);
 	  
